@@ -2,6 +2,7 @@
 ## For Ubuntu 
 
 - Install [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+  - https://www.arduino.cc/en/Guide/Linux
 
 - unzip the file by typing 
 ```
