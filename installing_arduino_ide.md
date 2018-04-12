@@ -63,3 +63,5 @@ Reference - [1](sudo apt-get install openjdk-8-jre)
     python3 get.py
     ```
     
+- Change the Board and Port
+- [Reference](https://www.mgo-tec.com/arduino-core-esp32-install)
