@@ -50,6 +50,9 @@ Reference - [1](sudo apt-get install openjdk-8-jre)
 
 - Go to [Setting up your arduino ide to connect to esp32](https://github.com/espressif/arduino-esp32#installation-instructions)
   - Choose [Instructions for Debian/Ubuntu Linux](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/debian_ubuntu.md)
+  ```
+  unzip arduino-esp32-master.zip
+  ```
   - Execute this command below 
     ```
     sudo usermod -a -G dialout $USER && \
