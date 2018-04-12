@@ -39,7 +39,10 @@ Reference - [[Linux]PATHの設定方法](http://devb.hatenablog.com/entry/201012
 $ echo $PATH
 $ echo $JAVA_HOME
 ```
-
+Execute command below to install Arduino IDE
+```
+$ ./install.sh
+```
 
 Reference - [1](sudo apt-get install openjdk-8-jre)
 
