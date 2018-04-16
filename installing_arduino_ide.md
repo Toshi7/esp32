@@ -71,3 +71,27 @@ Reference - [1](sudo apt-get install openjdk-8-jre)
     
 - Change the Board and Port
 - [Reference](https://www.mgo-tec.com/arduino-core-esp32-install)
+
+### "/dev/ttyUSB0": Permission denied or "/dev/ttyACM0": Permission denied(for arduino)
+When run your code, you get something like this 
+```
+Arduino IDE error - avrdude: ser_open(): can't open device "/dev/ttyACM0": Permission denied 
+```
+
+- Open Terminal and type:
+```
+$ ls -l /dev/ttyUSB0 or ls -l /dev/ttyACM*
+```
+- You will get something like:
+```
+crw-rw---- 1 root dialout 188, 0 5 apr 23.01 ttyUSB0
+```
+- To fix it, type these command below:
+```
+$ sudo usermod -a -G dialout <username>
+$ sudo chmod a+rw /dev/ttyUSB0 or sudo chmod a+rw /dev/ttyACM0
+```
+
+- [Reference](http://arduino-er.blogspot.jp/2014/08/arduino-ide-error-avrdude-seropen-cant.html)
+
+
